@@ -1,7 +1,7 @@
 Summary:	FFmpeg version of headers for NVidia's codec APIs (ffnvcodec)
 Summary(pl.UTF-8):	Wersja FFmpeg nagłówków do API kodeków firmy NVidia (ffnvcodec)
 Name:		nv-codec-headers
-Version:	9.0.18.1
+Version:	9.1.23.1
 Release:	1
 License:	MIT
 Group:		Development/Libraries
@@ -9,7 +9,7 @@ Group:		Development/Libraries
 # but use github mirror for stable tarballs
 #Source0Download: https://github.com/FFmpeg/nv-codec-headers/releases
 Source0:	https://github.com/FFmpeg/nv-codec-headers/releases/download/n%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	59bbe8fdf2ba3e3fe307d32046cfb9eb
+# Source0-md5:	610972fd2e0019b1800602b254165f20
 URL:		https://git.videolan.org/?p=ffmpeg/nv-codec-headers.git
 BuildRequires:	rpmbuild(macros) >= 1.446
 BuildArch:	noarch
@@ -28,7 +28,7 @@ Ta wersja odpowiada Video Codec SDK w wersji 9.0.18. Wymagana
 minimalna wersja sterowników firmy NVidia dla Linuksa to 418.30.
 
 %prep
-%setup -q -n %{name}-n%{version}
+%setup -q
 
 %build
 %{__make} \
