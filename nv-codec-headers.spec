@@ -1,7 +1,7 @@
 Summary:	FFmpeg version of headers for NVidia's codec APIs (ffnvcodec)
 Summary(pl.UTF-8):	Wersja FFmpeg nagłówków do API kodeków firmy NVidia (ffnvcodec)
 Name:		nv-codec-headers
-Version:	11.1.5.0
+Version:	11.1.5.1
 Release:	1
 License:	MIT
 Group:		Development/Libraries
@@ -9,7 +9,7 @@ Group:		Development/Libraries
 # but use github mirror for stable tarballs
 #Source0Download: https://github.com/FFmpeg/nv-codec-headers/releases
 Source0:	https://github.com/FFmpeg/nv-codec-headers/releases/download/n%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	8d9e098ccadee5cb213918bd07d0a529
+# Source0-md5:	d193c482ad4ee8fa0bcce51a5c13183d
 URL:		https://git.videolan.org/?p=ffmpeg/nv-codec-headers.git
 BuildRequires:	rpmbuild(macros) >= 1.446
 BuildArch:	noarch
@@ -18,14 +18,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 FFmpeg version of headers for NVidia's codec APIs.
 
-This version corresponds to Video Codec SDK version 9.0.18. Required
-minimal NVidia Linux drivers version is 418.30.
+This version corresponds to Video Codec SDK version 11.1.5. Required
+minimal NVidia Linux drivers version is 470.57.02.
 
 %description -l pl.UTF-8
 Wersja FFmpeg nagłówków do API kodeków firmy NVidia.
 
-Ta wersja odpowiada Video Codec SDK w wersji 9.0.18. Wymagana
-minimalna wersja sterowników firmy NVidia dla Linuksa to 418.30.
+Ta wersja odpowiada Video Codec SDK w wersji 11.1.5. Wymagana
+minimalna wersja sterowników firmy NVidia dla Linuksa to 470.57.02.
 
 %prep
 %setup -q
