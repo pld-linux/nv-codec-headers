@@ -1,7 +1,7 @@
 Summary:	FFmpeg version of headers for NVidia's codec APIs (ffnvcodec)
 Summary(pl.UTF-8):	Wersja FFmpeg nagłówków do API kodeków firmy NVidia (ffnvcodec)
 Name:		nv-codec-headers
-Version:	12.0.16.0
+Version:	12.1.14.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
@@ -9,7 +9,7 @@ Group:		Development/Libraries
 # but use github mirror for stable tarballs
 #Source0Download: https://github.com/FFmpeg/nv-codec-headers/releases
 Source0:	https://github.com/FFmpeg/nv-codec-headers/releases/download/n%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	21c29fed4437a746ae0216fc91534588
+# Source0-md5:	37f4ded44f9aa9e03fa42f2bb7c9012b
 URL:		https://git.videolan.org/?p=ffmpeg/nv-codec-headers.git
 BuildRequires:	rpmbuild(macros) >= 1.446
 BuildArch:	noarch
